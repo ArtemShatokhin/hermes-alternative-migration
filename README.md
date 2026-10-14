@@ -58,3 +58,5 @@ kortix ship
 - The full migration path: [hermesalternative.com/migrate-from-hermes](https://hermesalternative.com/migrate-from-hermes)
 - How Kortix compares with Hermes side by side: [hermesalternative.com/kortix-vs-hermes](https://hermesalternative.com/kortix-vs-hermes)
 - Other options when a personal agent is not enough: [hermesalternative.com/hermes-alternatives](https://hermesalternative.com/hermes-alternatives)
+- When the move is really about a team: [hermesalternative.com/hermes-for-teams](https://hermesalternative.com/hermes-for-teams)
+- What happens to the memory your agent built: [hermesalternative.com/hermes-agent-memory](https://hermesalternative.com/hermes-agent-memory)
