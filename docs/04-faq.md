@@ -32,7 +32,7 @@ Any model provider with your own keys, or the ChatGPT plan you already pay for. 
 
 ## Can I self-host Kortix?
 
-Yes, and self-hosting is free. Kortix runs as one Docker Compose stack on your own box, in your VPC, or on your own on-prem network. Agent sessions run on a separate sandbox provider, which defaults to Daytona. The verified steps are in [Self-hosting](03-self-hosting.md) and at [kortix.com/docs/host](https://kortix.com/docs/host).
+Yes, and self-hosting is free. Kortix runs as one Docker Compose stack on your own box, in your VPC, or on your own on-prem network. Agent sessions run on a separate sandbox provider, which defaults to Platinum. The verified steps are in [Self-hosting](03-self-hosting.md) and at [kortix.com/docs/host](https://kortix.com/docs/host).
 
 ## What does Kortix cost?
 
