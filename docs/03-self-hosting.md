@@ -10,14 +10,14 @@ The live guide is at [hermesalternative.com/self-hosting-hermes-alternative](htt
 
 Hermes Agent self-hosts as a single application. You install it on a host, it keeps everything in `~/.hermes` (or `/opt/data` in Docker), and you run one gateway process. Its Docker image is stateless, and the mounted data directory holds config, API keys, sessions, skills, and memories ([Hermes Docker setup](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/docker.md)).
 
-Kortix self-hosts as one Docker Compose stack: the frontend, the API, the LLM gateway, and the Supabase distribution. Agent sessions run on a separate sandbox provider, not on this stack; the default is Daytona, and Platinum and E2B are also supported ([Kortix self-hosting docs](https://kortix.com/docs/host)). That split is the point: the control plane runs on your box, and each session boots its own isolated cloud computer elsewhere.
+Kortix self-hosts as one Docker Compose stack: the frontend, the API, the LLM gateway, and the Supabase distribution. Agent sessions run on a separate sandbox provider, not on this stack; the default is Platinum, and Daytona remains available as a legacy fallback ([Kortix self-hosting docs](https://kortix.com/docs/host)). That split is the point: the control plane runs on your box, and each session boots its own isolated cloud computer elsewhere.
 
 ## Self-hosting at a glance
 
 | Dimension | Kortix | Hermes Agent |
 | --- | --- | --- |
 | Stack | Docker Compose: frontend, API, LLM gateway, Supabase | One application plus a gateway process |
-| Session compute | A separate sandbox provider (Daytona, Platinum, E2B) | Local, Docker, SSH, or a cloud backend |
+| Session compute | A separate sandbox provider (Platinum or the legacy Daytona fallback) | Local, Docker, SSH, or a cloud backend |
 | Install | One-shot bootstrap or the Kortix CLI | Installer script or the Docker image |
 | Dashboard | The app itself, on your domain | A web dashboard on port 9119 |
 | Updates | Automatic, or pinned to an exact version | Re-run the installer, or pull a new image |
